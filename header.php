@@ -1,4 +1,8 @@
-<?php require('function.php'); ?>
+<?php 
+require('function.php');
+$db = dbconnect();
+
+ ?>
 
 
 <!DOCTYPE html>
@@ -23,6 +27,9 @@
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
+    <style>
+        html {scroll-behavior: smooth;}
+    </style>
 
 <body>
 
@@ -42,9 +49,8 @@
                         <li><a href="#top">Home</a></li>
                         <li><a href="#featured">Football News</a></li>
                         <li><a href="#projects">Gallery</a></li>
-                        <li><a href="login.html">Login</a></li>
+                        <li><a href="login.html">Live Match</a></li>
                         <li><a href="#contact">Contact Us</a></li>
-                        <li><a href="login.html">Leave</a></li>
                     </ul>
                 </nav>
             </div>
@@ -81,7 +87,7 @@
                         <a href="#video">
                             <span class="rect"></span>
                             <span class="circle"></span>
-                            Login
+                            Live Match
                         </a>
                     </li>
                     <li>
@@ -130,7 +136,7 @@
                             <br>For affortable prices</p>
                           
                           <div class="white-button button">
-                              <a href="#projects">Gallery</a>
+                              <a href="login.php">Login</a>
                           </div>
                         </div>
                         </div>
@@ -156,3 +162,48 @@
                 <!-- // Item -->
             </div>
         </div>
+
+        <script>
+        var contentSection = $('.content-section, .main-banner');
+        var navigation = $('nav');
+        
+        //when a nav link is clicked, smooth scroll to the section
+        navigation.on('click', 'a', function(event){
+            event.preventDefault(); //prevents previous event
+            smoothScroll($(this.hash));
+        });
+        
+        //update navigation on scroll...
+        $(window).on('scroll', function(){
+            updateNavigation();
+        })
+        //...and when the page starts
+        updateNavigation();
+        
+        /////FUNCTIONS
+        function updateNavigation(){
+            contentSection.each(function(){
+                var sectionName = $(this).attr('id');
+                var navigationMatch = $('nav a[href="#' + sectionName + '"]');
+                if( ($(this).offset().top - $(window).height()/2 < $(window).scrollTop()) &&
+                      ($(this).offset().top + $(this).height() - $(window).height()/2 > $(window).scrollTop()))
+                    {
+                        navigationMatch.addClass('active-section');
+                    }
+                else {
+                    navigationMatch.removeClass('active-section');
+                }
+            });
+        }
+        function smoothScroll(target){
+            $('body,html').animate({
+                scrollTop: target.offset().top
+            }, 800);
+        }
+
+
+        $('.button a[href*=#]').on('click', function(e) {
+          e.preventDefault();
+          $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top -0 }, 500, 'linear');
+        });
+        </script>
