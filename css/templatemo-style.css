@@ -1077,3 +1077,204 @@ header {
   }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+#uploadform {
+      color: black;
+      margin: auto;
+      width: 90%;
+      padding: 50px;
+    }
+
+    #uploadform label {
+      display: block;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    #uploadform div {
+      width: 200px;
+      height: 200px;
+      background-color: #ccc;
+      border-radius: 50%;
+      background-image: url( );
+      background-size: cover;
+    }
+
+    #uploadform select {
+      width: 90%;
+      padding: 10px 0;
+      border: 2px solid #ccc;
+      margin: 10px 0;
+      margin-bottom: 20px;
+    }
+
+    #uploadform input, textarea {
+      width: 90%;
+      padding: 10px 0;
+      margin-bottom: 30px;
+      border: 0;
+      border-bottom: 2px solid black;
+    }
+
+    #uploadform input:focus, textarea:focus {
+      color: ;
+      font-size: large;
+      border-color: #45489a;
+    }
+
+    #preloader {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 9999;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    #preloader:before {
+      content: "";
+      position: fixed;
+      top: 45%;
+      left: 45%;
+      border: 6px solid #f2f2f2;
+      border-top: 5px solid #45489a;
+      border-left: 5px solid #45489a;
+      border-bottom: 5px solid #45489a;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      -webkit-animation: animate-preloader 1s linear infinite;
+      animation: animate-preloader 1s linear infinite;
+    }
+
+    @-webkit-keyframes animate-preloader {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes animate-preloader {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }#uploadform {
+      color: black;
+      margin: auto;
+      width: 90%;
+      padding: 50px;
+    }
+
+    #uploadform label {
+      display: block;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    #uploadform div {
+      width: 200px;
+      height: 200px;
+      background-color: #ccc;
+      border-radius: 50%;
+      background-image: url( );
+      background-size: cover;
+    }
+
+    #uploadform select {
+      width: 90%;
+      padding: 10px 0;
+      border: 2px solid #ccc;
+      margin: 10px 0;
+      margin-bottom: 20px;
+    }
+
+    #uploadform input, textarea {
+      width: 90%;
+      padding: 10px 0;
+      margin-bottom: 30px;
+      border: 0;
+      border-bottom: 2px solid black;
+    }
+
+    #uploadform input:focus, textarea:focus {
+      color: ;
+      font-size: large;
+      border-color: #45489a;
+    }
+
+    #preloader {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 9999;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    #preloader:before {
+      content: "";
+      position: fixed;
+      top: 45%;
+      left: 45%;
+      border: 6px solid #f2f2f2;
+      border-top: 5px solid #45489a;
+      border-left: 5px solid #45489a;
+      border-bottom: 5px solid #45489a;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      -webkit-animation: animate-preloader 1s linear infinite;
+      animation: animate-preloader 1s linear infinite;
+    }
+
+    @-webkit-keyframes animate-preloader {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes animate-preloader {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
