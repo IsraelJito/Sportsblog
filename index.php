@@ -1,7 +1,6 @@
 <?php require('header.php'); ?>
 
 
-
 <div class="page-content">
     <section id="featured" class="content-section">
         <div class="section-heading">
@@ -17,10 +16,10 @@
                 $posts = getposts();
                 while ($post = mysqli_fetch_assoc($posts)) {?>
                     <div class="item">
-                    <div class="image">
-                        <img src="img/<?= $post['image']?>" alt="" style="max-width: 90%; max-height: 100%;">
+                    <div class="image" style="height: 300px;">
+                        <img src="img/<?= $post['image']?>" alt="" style="width: 100%; height: 100%; object-fit: cover;">
                         <div class="featured-button button">
-                            <a href="#projects">View post</a>
+                            <a href="blogs.php">View post</a>
                         </div>
                     </div>
                     <div class="text-content">
@@ -318,32 +317,7 @@
 
     <section id="contact" class="content-section">
 
-<!--                 <div style="
-                -webkit-animation: animate-preloader 1s linear infinite;
-            animation: animate-preloader 1s linear infinite;
-        @-webkit-keyframes animate-preloader {
-            0% {
-                -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
-            }
 
-            100% {
-                -webkit-transform: rotate(360deg);
-                transform: rotate(360deg);
-            }
-        }
-
-        @keyframes animate-preloader {
-            0% {
-                -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
-            }
-
-            100% {
-                -webkit-transform: rotate(360deg);
-                transform: rotate(360deg);
-            }
-        }">Job vacancy for an upcoming talented writter!</div> -->
               <!--   <div id="map">
                 
                 	How to change your own map point
@@ -394,7 +368,6 @@
     </div>
 </div>
 </section>
-
 
 
 <?php require('footer.php'); ?>

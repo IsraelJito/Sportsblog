@@ -2,6 +2,7 @@
 
 <div class="page-content">
 	<section class="content-section">
+		<h5 style="display: left; text-align: left; padding-left: 5px; "><?= $user['username'] ?> Posts!</h5>
 		<h2 style="display: block; text-align: center;">My Posts</h2>
 		<table id="table">
 			<tr>

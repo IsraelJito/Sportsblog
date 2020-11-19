@@ -46,11 +46,11 @@ $db = dbconnect();
             <div id="main-nav" class="collapse navbar-collapse">
                 <nav>
                     <ul class="nav navbar-nav">
-                        <li><a href="#top">Home</a></li>
-                        <li><a href="#featured">Football News</a></li>
-                        <li><a href="#projects">Gallery</a></li>
-                        <li><a href="login.html">Live Match</a></li>
-                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="index.php?#featured">Football News</a></li>
+                        <li><a href="index.php?#projects">Gallery</a></li>
+                        <li><a href="#video">Live Match</a></li>
+                        <li><a href="home.php?#contact">Contact Us</a></li>
                     </ul>
                 </nav>
             </div>
@@ -63,35 +63,35 @@ $db = dbconnect();
             <nav>
                 <ul>
                     <li>
-                        <a href="#top">
+                        <a href="index.php">
                             <span class="rect"></span>
                             <span class="circle"></span>
                             Home
                         </a>
                     </li>
                     <li>
-                        <a href="#featured">
+                        <a href="index.php?#featured">
                             <span class="rect"></span>
                             <span class="circle"></span>
                             Football Update
                         </a>
                     </li>
                     <li>
-                        <a href="#projects">
+                        <a href="index.php?#projects">
                             <span class="rect"></span>
                             <span class="circle"></span>
                             Gallery
                         </a>
                     </li>
                     <li>
-                        <a href="#video">
+                        <a href="index.php?#video">
                             <span class="rect"></span>
                             <span class="circle"></span>
                             Live Match
                         </a>
                     </li>
                     <li>
-                        <a href="#contact">
+                        <a href="index.php?#contact">
                             <span class="rect"></span>
                             <span class="circle"></span>
                             Contact Us

@@ -8,6 +8,7 @@ if (!isset($_SESSION['user'])) {
 }
 $errors = [];
 $user = $_SESSION['user'];
+
 ?>
 
 
@@ -50,6 +51,9 @@ $user = $_SESSION['user'];
         #table td {
             padding: 10px;
          }
+        .profile_pic_buttons {
+            padding: 5px;
+        }
 </style>
 
 <body>

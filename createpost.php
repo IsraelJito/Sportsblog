@@ -8,7 +8,6 @@ if (isset($_POST['submit'])) {
 	}
 }
 
-
 ?>
 
 
@@ -32,12 +31,14 @@ if (isset($_POST['submit'])) {
 					<?php } ?>
 					<label for="title">Blog Title</label>
 					<input type="text" name="title" id="title" placeholder="Blog Title..">
-					<div></div>
+					<div id="post_image_viewer">
+						<img src="" style="width: 100%; height: 100%; border-radius: 50%;">
+					</div>
 					<?php if (!empty($errors['image'])) { ?>
 						<br><span style="color: red;"><?= $errors['image']; ?></span>
 					<?php } ?>
 					<label for="image">Image</label>
-					<input type="file" name="image" id="image" placeholder="Blog Image..">
+					<input type="file" name="image" id="image" placeholder="Blog Image.." oninput="display()">
 					<select name="status">
 						<option value="active">Publish</option>
 						<option value="inactive">Save as draft</option>
@@ -53,6 +54,16 @@ if (isset($_POST['submit'])) {
 			</div>
 		</div>
 	</div>
+
+	<script>
+		function display() {
+			var image = document.getElementById('image').value;
+			var div = document.getElementById('post_image_viewer');
+			if (image) {
+				
+			}
+		}
+	</script>
 
 
 
